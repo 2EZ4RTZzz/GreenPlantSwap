@@ -1,0 +1,216 @@
+@font-face {
+  font-family: "MyFont";
+  src: url(../css/louis_george_caf/Louis\ George\ Cafe\ Bold.ttf)
+    format("truetype");
+}
+
+body {
+  font-family: "MyFont";
+  background-color: rgb(209, 231, 188, 0.2);
+  margin: 0%;
+}
+
+main {
+  display: flex;
+  gap: 4%;
+  max-width: 1800px;
+  margin: auto;
+  padding: 2rem;
+}
+
+img {
+  width: 100%;
+}
+
+.product-left {
+  width: 60%;
+  display: flex;
+  gap: 2%;
+}
+
+.small-pics {
+  /* width: 22.7%; */
+  width: 10%;
+}
+
+.small-pics:hover {
+  cursor: pointer;
+}
+
+.small-pics img {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.large-pic {
+  width: 80%;
+}
+
+.product-right {
+  width: 40%;
+}
+
+@media screen and (max-width: 850px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .product-left {
+    /* align-items: center; */
+    width: 100%;
+    flex-direction: column;
+  }
+
+
+  .small-pics {
+    /* align-items: center; */
+    order: 2;
+    /* border:1px solid red; */
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .large-pic {
+    order: 1;
+    width:100%;
+  }
+
+  .small-pics img {
+    display: inline;
+    margin-bottom: 0rem;
+    width: 15%;
+  }
+
+  .product-right {
+    width: 100%;
+    /* border:1px solid red; */
+  }
+}
+
+/* buttons */
+.color button {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  padding: 0.2rem;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.color button:nth-of-type(1) {
+  background: rgb(157, 136, 89);
+  background-clip: content-box;
+}
+
+.color button:hover,
+.color button:focus {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.color button:nth-of-type(2) {
+  background: rgb(98, 97, 101);
+  background-clip: content-box;
+}
+
+.color button:nth-of-type(3) {
+  background: rgb(42, 104, 81);
+  background-clip: content-box;
+}
+
+.Description {
+  font-size: 12pt;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+.addCart-btn a {
+  display: inline-block;
+  /* border-radius: 3em; */
+  width: 30%;
+  background: rgb(53, 114, 77);
+  padding: 0.7em 0;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: 0.5s;
+  margin-left: 1em;
+}
+.addCart-btn a:hover,
+.addToCart-btn a:focus {
+  text-decoration: none;
+  background: rgb(31, 58, 42);
+  color: white;
+}
+
+/* Quantity button_add */
+/* reference: https://codepen.io/ahmetaksungur/pen/QWNEKXq */
+.quantity {
+  display: inline-block;
+}
+
+.quantity .input-text.qty {
+  width: 35px;
+  height: 39px;
+  padding: 0 5px;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid #efefef;
+}
+
+.quantity.buttons_added {
+  text-align: left;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+.quantity.buttons_added input {
+  display: inline-block;
+  margin: 0;
+  vertical-align: top;
+  box-shadow: none;
+}
+
+.quantity.buttons_added .minus,
+.quantity.buttons_added .plus {
+  padding: 7px 10px 8px;
+  height: 41px;
+  background-color: #ffffff;
+  border: 1px solid #efefef;
+  cursor: pointer;
+}
+
+.quantity.buttons_added .minus {
+  border-right: 0;
+}
+
+.quantity.buttons_added .plus {
+  border-left: 0;
+}
+
+.quantity.buttons_added .minus:hover,
+.quantity.buttons_added .plus:hover {
+  background: #eeeeee;
+}
+
+.quantity input::-webkit-outer-spin-button,
+.quantity input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin: 0;
+}
+
+.quantity.buttons_added .minus:focus,
+.quantity.buttons_added .plus:focus {
+  outline: none;
+}
+
+p {
+  font-size: 1.2em;
+}

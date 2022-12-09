@@ -1,0 +1,74 @@
+@font-face {
+  font-family: "MyFont";
+  src: url(../css/louis_george_caf/Louis\ George\ Cafe\ Bold.ttf)
+    format("truetype");
+}
+body {
+  margin: auto;
+}
+.button-nav2:hover,
+.button-nav2:focus {
+  border: 0.05rem solid;
+
+  color: white;
+  background-color: rgb(49, 62, 54);
+}
+
+input[type="text"],
+select,
+textarea {
+  font-family: "MyFont";
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+.img_alt{
+  display: block;
+  width: 100%;
+  height: auto;
+
+  
+}
+.container {
+  max-width: 1800px;
+  margin-top:5em;
+  height:100%;
+  box-shadow: 0 0px 20px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  border: 1rem;
+  margin-top: 5rem;
+  margin-left: 20%;
+  padding: 1.4rem;
+  width: 60%;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .column,
+  input[type="submit"] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .container{
+    margin: 5rem auto;
+    width: 80%;
+  }
+
+
+}

@@ -1,0 +1,153 @@
+
+
+@font-face {
+  font-family: "MyFont";
+  src: url(../css/louis_george_caf/Louis\ George\ Cafe\ Bold.ttf)
+    format("truetype");
+}
+
+body{
+  /* border:1px solid black; */
+  margin:auto;
+}
+
+/* h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 3em;
+  border-top: 0.2em;
+} */
+p {
+  text-align: center;
+}
+
+/* .element {
+  padding-bottom: 0.2rem;
+  border-top-width: 0.15rem;
+  border-top-style: solid;
+  border-top-color: black;
+  padding-top: 1rem;
+  text-align: center;
+} */
+
+.button-nav3 {
+  display: inline-block;
+  padding: 0.3rem;
+  width: 7rem;
+  text-align: center;
+  margin-top: 1rem;
+  color: white;
+  background-color: rgb(58, 102, 74);
+  text-decoration: none;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.button-nav3:hover,
+.button-nav3:focus {
+  border: 0rem solid;
+  color: white;
+  background-color: rgb(35, 49, 41);
+  text-decoration: none;
+}
+
+/* This code reference on W3schools*/
+.container {
+  position: relative;
+  
+}
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* .image:hover {
+  width: 100%;
+} */
+
+h3{
+  font-size:1.2rem;
+}
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  /* bottom: -17px; */
+  bottom: 0rem;
+  background: rgba(201, 198, 198, 0.8);
+  width: 100%;
+  transition: 1s ease;
+  opacity: 0;
+  color: white;
+  font-size: 1.2rem;
+  height: 5rem;
+  padding: 0rem;
+  padding-top:2rem;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+  /* right:10%; */
+  
+}
+
+.grid-container {
+  display: grid;
+  /* float: left; */
+  grid-template-columns: repeat(4, 1fr);
+
+  /* justify-content: space-between; */
+  padding: 2rem;
+  gap: 2rem;
+  grid-column: 0.5;
+}
+
+.grid-item {
+  padding: 0.8rem;
+  text-align: center;
+}
+@media screen and (max-width: 900px) {
+  .grid-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+    /* padding: 1rem; */
+    gap: 2rem;
+    grid-column: 0.5;
+  }
+
+  .grid-item {
+    padding: 0.8rem;
+  }
+}
+@media screen and (max-width: 780px) {
+  .grid-container {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    gap: 2rem;
+    grid-column: 0.5;
+  }
+
+  .grid-item {
+    padding: 0.8rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .grid-container {
+    display: grid;
+
+    grid-template-columns: repeat(1, 1fr);
+    padding: 1rem;
+    gap: 2rem;
+    grid-column: 0.5;
+  }
+
+  .grid-item {
+    padding: 0.8rem;
+  }
+}

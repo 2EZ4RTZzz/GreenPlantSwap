@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "MyFont";
+  src: url(../css/louis_george_caf/Louis\ George\ Cafe\ Bold.ttf)
+    format("truetype");
+}
+
+body {
+  margin: auto;
+}
+section {
+  max-width: 800px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 5rem;
+}
+p {
+  margin: auto;
+  font-size: 1.2rem;
+  text-align: left;
+}
+.image {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0rem;
+}
+.image > img {
+  width: 100%;
+}
+
+.underlineforhere:hover {
+  text-decoration: underline;
+}
+
+.underlineforhere:active {
+  text-decoration: underline;
+}
+
+#main {
+  padding: 0.5em;
+}
